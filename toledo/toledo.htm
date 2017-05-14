@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>University of Toledo</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="canonical" href="http://www.utoledo.edu" />
+      <meta name="description" content="University of Toledo : The University of Toledo&#xA;" />
+      <meta name="keywords" content="" />
+      <link rel="stylesheet" type="text/css" href="navigat.css">
+     
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0" />
+<link rel="icon" href="images/favicon.jpg">
+<script type="text/javascript" language="javascript">
+	$(document).ready(function(){
+		$("#links").hide();
+
+		$(".menu_list").click(function(){
+			$("#links").slideToggle( 'normal');
+		});
+	
+	});
+	
+	var slideIndex = 1; 
+showSlides(slideIndex); 
+ 
+function plusSlides(n) { 
+  showSlides(slideIndex += n); 
+} 
+ 
+function currentSlide(n) { 
+  showSlides(slideIndex = n); 
+} 
+ 
+function showSlides(n) { 
+  var i; 
+  var slides = document.getElementsByClassName("mySlides"); 
+  var dots = document.getElementsByClassName("dot"); 
+  if (n > slides.length) {slideIndex = 1}     
+  if (n < 1) {slideIndex = slides.length} 
+  for (i = 0; i < slides.length; i++) { 
+      slides[i].style.display = "none";   
+  } 
+  for (i = 0; i < dots.length; i++) { 
+      dots[i].className = dots[i].className.replace(" active", ""); 
+  } 
+  slides[slideIndex-1].style.display = "block";   
+  dots[slideIndex-1].className += " active"; 
+} 
+
+</script>
+<style type="text/css">
+body{
+	font-family: arial;
+}
+* button {
+  color: #fff;
+  text-shadow: -2px 2px #346392;
+  background-color: #ff9664;
+  background-image: linear-gradient(top, #6496c8, #346392);
+  box-shadow: inset 0 0 0 1px #27496d;
+  border: none;
+  border-radius: 15px;
+}
+
+* button:hover,
+* button.hover {
+  box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+* button:active,
+* button.active {
+  box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+	 /* section */
+   article section{ padding:0; }
+   
+   /* basic page division */
+   
+   .thres{ width:15%;float:left;margin-right:1%; }
+   .thres1{ width:50%;float:left;margin-right:1%;
+   text-align: center; }
+   .last{ width:auto;float:left;margin-right:0%;}
+   .footer{
+   	background-color: blue;
+   }
+   .thres2{ width:25%;float:left;margin-right:1%; 
+  	margin-left: 70px;}
+   .thres3{ width:35%;float:left;margin-right:1%;
+   text-align: center; }
+   .thres4{ width:25%;float:left;margin-right:60px;}
+
+  .thresa{ width:45%;float:left;margin-right:1%; 
+  	margin-left: 70px;}
+   .thres1b{ width:20%;float:left;margin-right:1%;
+   text-align: center; }
+   .lastc{ width:auto;float:left;margin-right:60px;}
+  /* .row{
+   	background-image: url('images/oppo.jpg');
+   }*/
+  
+  /* Slideshow container */ 
+.slideshow-container { 
+  max-width: 100%; 
+  position: relative; 
+  margin: auto; 
+} 
+ 
+/* Next & previous buttons */ 
+.prev, .next { 
+  cursor: pointer; 
+  position: absolute; 
+  top: 0; 
+  top: 50%; 
+  width: auto; 
+  padding: 16px; 
+  margin-top: -22px; 
+  color: white; 
+  font-weight: bold; 
+  font-size: 18px; 
+  transition: 0.6s ease; 
+  border-radius: 0 3px 3px 0; 
+} 
+ 
+/* Position the "next button" to the right */ 
+.next { 
+  right: 0; 
+  border-radius: 3px 0 0 3px; 
+} 
+ 
+/* On hover, add a black background color with a little bit see-through */ 
+.prev:hover, .next:hover { 
+  background-color: none; 
+} 
+ 
+/* Caption text */ 
+.text { 
+  color: #f2f2f2; 
+  font-size: 15px; 
+  padding: 8px 12px; 
+  position: absolute; 
+  bottom: 8px; 
+  width: 100%; 
+  text-align: left; 
+} 
+ 
+/* Number text (1/3 etc) */ 
+.numbertext { 
+  color: #f2f2f2; 
+  font-size: 12px; 
+  padding: 8px 12px; 
+  position: absolute; 
+  top: 0; 
+} 
+ 
+/* The dots/bullets/indicators */ 
+.dot { 
+  cursor:pointer; 
+  height: 13px; 
+  width: 13px; 
+  margin: 0 2px; 
+  background-color: #bbb; 
+  border-radius: 50%; 
+  display: inline-block; 
+  transition: background-color 0.6s ease; 
+} 
+ 
+.active, .dot:hover { 
+  background-color: #717171; 
+} 
+ 
+/* Fading animation */ 
+.fade { 
+  -webkit-animation-name: fade; 
+  -webkit-animation-duration: 1.5s; 
+  animation-name: fade; 
+  animation-duration: 1.5s; 
+} 
+ 
+@-webkit-keyframes fade { 
+  from {opacity: .4}  
+  to {opacity: 1} 
+} 
+ 
+@keyframes fade { 
+  from {opacity: .4}  
+  to {opacity: 1} 
+} 
+ 
+/* On smaller screens, decrease text size */ 
+@media only screen and (max-width: 300px) { 
+  .prev, .next,.text {font-size: 11px} 
+} 
+nav{
+	float:right;
+	background-image: url('images/head_logo.jpg'); 
+	
+}
+nav ul{
+	margin:0;
+	
+}
+nav ul li a{
+	text-decoration:none;
+	color: white
+	
+}
+nav ul li.current{
+	font-weight:bold;
+	
+}
+nav ul li a.last{
+	border-right:0;
+}
+nav ul ul {
+	display: none;
+}
+nav ul li:hover > ul {
+		display: block;
+}
+nav ul {
+	
+	
+	
+	padding: 0 15px 0;
+	width: 100%; 
+	list-style: none;
+	position: relative;
+	display: inline-table;
+
+}
+nav ul:after {
+		content: ""; clear: both; display: block;
+}
+nav ul li {
+	float: left;
+}
+nav ul li:hover {
+		background: white;
+		background: linear-gradient(top, black 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+nav ul li:hover a {
+			color: white;
+}
+nav ul li a {
+		display: block; padding: 25px 40px;
+		color: white; text-decoration: none;
+}
+.newca{
+	background-image: url('images/newcamp.jpg');
+	float: center;
+	text-align: left;
+}
+.newca p,h1,button{
+	text-align: left;
+	margin-left: 90px;
+}
+.menu_list a{
+	color: white;
+	text-decoration: none;
+}
+.menu_list img{
+	margin-left: 100px;
+
+}
+
+/* The CSS */
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+.main_detail {position:relative}
+.main_detail:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+.main_detail:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+.last p{
+	font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+	color: white;
+	text-align: left;
+	margin-left: 100px;
+}
+</style>
+<script type="text/javascript" src="lib/jquery-2.2.4.js"></script>
+
+<script type="text/javascript" src="lib/jquery-ui.js"></script>
+</head>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<body>
+<div style="width:100%">
+<div style="background-image:url('back.jpg'); height:73px;width:auto;float:center;">
+	<div class="menu_list" align="left">
+	
+		<font color="white" size="4"><a href="#" >MENU</a></font> 
+	
+	<img src="images/head_logo.png" align="center" height="72px">
+	
+		<nav>
+		<ul id="links">
+		<font color="white">
+			<li><a href="#">APPLY</a></li>
+			</font>
+			<li><a href="#">VISIT</a></li>
+			<li>
+			<a href="#">REQUEST INFO</a>
+			</li>
+			<li><a href="#"> A-Z LIST</a>
+				
+			</li>
+			<li>
+				<a href="#"><img src="images/search.jpg" height="18px" width="40"></a>
+			</li>
+			
+			
+
+		</ul>
+			
+	</nav>
+	
+	
+	</div>
+
+</div>
+
+<div id="nav" style="background-color:indigo">
+	<div id="nav_wrapper" class="links_list" >
+		<ul id="links" class="links">
+			<li><a href="#admission">ADMISSION</a></li>
+			<li><a href="#academics">ACADEMICS</a></li>
+			
+			<li>
+			<a href="#research">RESEARCH</a>
+			</li>
+			<li><a href="#atlet"> ATHLETICS</a></li>
+			<li><a href="#alumni">ALUMNI</a></li>
+			
+			<li><a href="#about">ABOUT</a>
+			
+			<li>
+				<a href="#">	UT HEALTH</a>
+			</li>
+			<li>
+			<a href="#">GIVING</a>
+				
+			</li>
+			<li>
+			<a href="#">MY UT</a>
+				
+			</li>
+			
+
+		</ul>
+	</div>
+
+	</div>
+	<div style="background-color:white;width:100%;height:375px">
+		 
+		<div class="slideshow-container" style="width:100%"> 
+		 
+		<div class="fade"> 
+		  <div class="numbertext">1 / 3</div> 
+		  <img src="images/apply.jpg" width="100%" height="375px"> 
+		  <div class="text">Welcome</div> 
+		</div> 
+		<!-- <div class="fade" > <img src="images/apply.jpg" width="100%" height="375px"> </div>
+        <div class="numtext">
+            <div class="announcementText">Fall Campus Preview Days</div>
+            <div class="sublineText">Find out why UT is the place for you<br />Academic sessions, tours and fun</div>
+            
+        </div> -->
+		<!--  
+		<div class="mySlides fade"> 
+		  <div class="numbertext">2 / 3</div> 
+		  <img src="images/campus.jpg" style="width:100%"> 
+		  <div class="text">Online Booking</div> 
+		</div> 
+		 
+		<div class="mySlides fade"> 
+		  <div class="numbertext">3 / 3</div> 
+		  <img src="images/rockets.jpg" style="width:100%"> 
+		  <div class="text">Switch digital</div> 
+		</div>  -->
+		 
+		<a class="prev" onclick="plusSlides(-1)"><img src='images/goleft.jpg'/> </a> 
+		<a class="next" onclick="plusSlides(1)"><img src='images/go.jpg'/></a> 
+		 
+		</div> 
+	
+ 
+		<div style="text-align:center"> 
+		  <span class="dot" onclick="currentSlide(1)"></span>  
+		  <span class="dot" onclick="currentSlide(2)"></span>  
+		  <span class="dot" onclick="currentSlide(3)"></span>  
+		</div> 
+ </div>
+ <div style="background-image: url(images/oppo.jpg);width:100%; height:240px" >
+ 	 <div id="home_list" >
+                  
+                  <div class="container" style="float:center">
+                     
+                     <div id="main_detail" class="couses" align="center">
+                        
+                        <font color="blue" size="4" type="Lucida Sans"><h2 align="center">OPPORTUNITY TO A GREATER DEGREE</h2></font>
+                        <select id="majorDropdown" name="major" >
+                           
+                           <option value="">Select an undergraduate major</option>
+                           
+                           <option value="Accounting">Accounting</option>
+                           
+                           <option value="Accounting Technology">Accounting Technology</option>
+                           
+                           <option value="Secondary-Adolescence to Young Adult Education">Secondary/Adolescence to Young Adult Education</option>
+                           
+                           <option value="Adult Liberal Studies">Adult Liberal Studies</option>
+                           
+                           <option value="American Studies">American Studies</option>
+                           
+                           <option value="Anthropology">Anthropology</option>
+                           
+                           <option value="Applied Organizational Technology">Applied Organizational Technology</option>
+                           
+                           <option value="Army ROTC">Army ROTC</option>
+                           
+                           <option value="Art">Art</option>
+                           
+                           <option value="Art Education">Art Education</option>
+                           
+                           <option value="Art History">Art History</option>
+                           
+                           <option value="Astronomy">Astronomy</option>
+                           
+                           <option value="Bioengineering">Bioengineering</option>
+                           
+                           <option value="Biology">Biology</option>
+                           
+                           <option value="Business Management Technology">Business Management Technology</option>
+                           
+                           <option value="Chemical Engineering">Chemical Engineering</option>
+                           
+                           <option value="Chemistry">Chemistry</option>
+                           
+                           <option value="Civil Engineering">Civil Engineering</option>
+                           
+                           <option value="Communication">Communication</option>
+                           
+                           <option value="Computer Network Administration">Computer Network Administration</option>
+                           
+                           <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                           
+                           <option value="Computer Science and Engineering Technology">Computer Science and Engineering Technology</option>
+                           
+                           <option value="Computer Software Specialist">Computer Software Specialist</option>
+                           
+                           <option value="Construction Engineering Technology">Construction Engineering Technology</option>
+                           
+                           <option value="Cosmetic Science and Formulation Design">Cosmetic Science and Formulation Design</option>
+                           
+                           <option value="Criminal Justice">Criminal Justice</option>
+                           
+                           <option value="Disability Studies">Disability Studies</option>
+                           
+                           <option value="Doctor of Pharmacy-PharmD">Doctor of Pharmacy-PharmD</option>
+                           
+                           <option value="Early Childhood Education">Early Childhood Education</option>
+                           
+                           <option value="Economics">Economics</option>
+                           
+                           <option value="Electrical Engineering">Electrical Engineering</option>
+                           
+                           <option value="Electrical Engineering Technology">Electrical Engineering Technology</option>
+                           
+                           <option value="Electronic Commerce">Electronic Commerce</option>
+                           
+                           <option value="English">English</option>
+                           
+                           <option value="Entrepreneurship">Entrepreneurship</option>
+                           
+                           <option value="Environmental Sciences">Environmental Sciences</option>
+                           
+                           <option value="Environmental Studies">Environmental Studies</option>
+                           
+                           <option value="Exercise Science">Exercise Science</option>
+                           
+                           <option value="Film-Video">Film-Video</option>
+                           
+                           <option value="Finance">Finance</option>
+                           
+                           <option value="Financial Services">Financial Services</option>
+                           
+                           <option value="Foreign Language Education">Foreign Language Education</option>
+                           
+                           <option value="Foreign Language">Foreign Language</option>
+                           
+                           <option value="General Studies">General Studies</option>
+                           
+                           <option value="Geography and Planning">Geography and Planning</option>
+                           
+                           <option value="Geology">Geology</option>
+                           
+                           <option value="Global Studies">Global Studies</option>
+                           
+                           <option value="Health Care Administration">Health Care Administration</option>
+                           
+                           <option value="Health Information Management">Health Information Management</option>
+                           
+                           <option value="History">History</option>
+                           
+                           <option value="human resource management">Human Resource Management</option>
+                           
+                           <option value="Humanities">Humanities</option>
+                           
+                           <option value="Individualized Program">Individualized Program</option>
+                           
+                           <option value="Information Services and Support">Information Services and Support</option>
+                           
+                           <option value="Information Systems">Information Systems</option>
+                           
+                           <option value="Information Technology - Business">Information Technology - Business</option>
+                           
+                           <option value="Information Technology - Engineering">Information Technology - Engineering</option>
+                           
+                           <option value="International Business">International Business</option>
+                           
+                           <option value="Law and Social Thought">Law and Social Thought</option>
+                           
+                           <option value="Marketing">Marketing</option>
+                           
+                           <option value="Mathematics">Mathematics</option>
+                           
+                           <option value="Mechanical Engineering">Mechanical Engineering</option>
+                           
+                           <option value="Mechanical Engineering Technology">Mechanical Engineering Technology</option>
+                           
+                           <option value="Medical Technology">Medical Technology</option>
+                           
+                           <option value="Medicinal and Biological Chemistry">Medicinal and Biological Chemistry</option>
+                           
+                           <option value="Middle Childhood Education">Middle Childhood Education</option>
+                           
+                           <option value="Music">Music</option>
+                           
+                           <option value="Music Education">Music Education</option>
+                           
+                           <option value="Nursing">Nursing</option>
+                           
+                           <option value="Operations Management">Operations Management</option>
+                           
+                           <option value="Organizational Leadership and Management">Organizational Leadership and Management</option>
+                           
+                           <option value="Paralegal Studies ">Paralegal Studies</option>
+                           
+                           <option value="Pharmaceutical Sciences">Pharmaceutical Sciences</option>
+                           
+                           <option value="Pharmaceutics">Pharmaceutics</option>
+                           
+                           <option value="Pharmacology Toxicology">Pharmacology Toxicology</option>
+                           
+                           <option value="Pharmacy Administration">Pharmacy Administration</option>
+                           
+                           <option value="Philosophy">Philosophy</option>
+                           
+                           <option value="Physics">Physics</option>
+                           
+                           <option value="Political Science and Public Administration">Political Science and Public Administration</option>
+                           
+                           <option value="Pre-business Administration">Pre-business Administration</option>
+                           
+                           <option value="Pre-law ">Pre-law</option>
+                           
+                           <option value="Pre-Med">Pre-Med</option>
+                           
+                           <option value="Professional Sales">Professional Sales</option>
+                           
+                           <option value="Professional Studies">Professional Studies</option>
+                           
+                           <option value="Programming and Software Development">Programming and Software Development</option>
+                           
+                           <option value="Psychology">Psychology</option>
+                           
+                           <option value="Public Health">Public Health</option>
+                           
+                           <option value="Recreational Therapy">Recreational Therapy</option>
+                           
+                           <option value="Religious Studies">Religious Studies</option>
+                           
+                           <option value="Respiratory Care">Respiratory Care</option>
+                           
+                           <option value="Social Work">Social Work</option>
+                           
+                           <option value="Sociology">Sociology</option>
+                           
+                           <option value="Special Education-Intervention Specialist">Special Education-Intervention Specialist</option>
+                           
+                           <option value="Speech Language Pathology">Speech Language Pathology</option>
+                           
+                           <option value="Supply Chain Management">Supply Chain Management</option>
+                           
+                           <option value="Technical Studies">Technical Studies</option>
+                           
+                           <option value="Theatre">Theatre</option>
+                           
+                           <option value="Transition Program">Transition Program</option>
+                           
+                           <option value="Undecided QUEST Program">Undecided QUEST Program</option>
+                           
+                           <option value="Urban Studies">Urban Studies</option>
+                           
+                           <option value="Womens and Gender Studies">Womens and Gender Studies</option>
+                           </select>
+                        		<br /><a href="http://www.utoledo.edu/menu/academics/?undergrad" style="color:#406d98; text-decoration:underline;">Undergraduate</a> | <a href="http://www.utoledo.edu/menu/academics/?grad-prof" style="color:#406d98; text-decoration:underline;">Graduate/Professional</a> | <a href="http://www.utoledo.edu/menu/academics/?online" style="color:#406d98; text-decoration:underline;">Online</a>
+                        	
+                     </div>
+                     </div>
+                     <div>
+                     	<article>
+                     		<section>
+                     			<div>
+                     				 
+                     <div class="row">
+                        
+                        <div id="home_apply" class="thres2">
+                           
+                           <h4><img src="images/ban1.jpg" width="30px" height="30px"><a class="gtm-cta" href="#">Apply Now</a></h4>
+                           
+                           <p><a class="gtm-cta" href="#">UT's admission application is now available online. Apply today for an early scholarship
+                                 offer.</a></p>
+                           
+                        </div>
+                        
+                        <div id="home_info" class="thres3">
+                           
+                           <h4><img src="images/ban2.jpg" width="30px" height="30px"><a class="gtm-cta" href="#">Request Information</a></h4>
+                           
+                           <p><a class="gtm-cta" href="#">Want to learn more about The University of Toledo? Request information by filling
+                                 out our fast, simple form.</a></p>
+                           
+                        </div>
+                        
+                        <div id="home_visit" class="thres4">
+                           
+                           <h4><img src="images/ban3.jpg" width="30px" height="30px"><a class="gtm-cta" href="#">Visit Campus</a></h4>
+                           
+                           <p><a class="gtm-cta" href="#">Come for a visit Monday thru Friday or on Saturday morning. We will show you around
+                                 our beautiful campus.</a></p>
+                           
+                        </div>
+                     			</div>
+                     		</section>
+                     	</article>
+                    
+ </div>
+<div style="background-image:url('bg_olivia.jpg');clear:both; height:855px" class="newca">
+	<table border="0" height="300px">
+	
+	<tr><td rowspan="2"><img src="images/bg_olivia.jpg"></td><td><img src="images/text_successful.png" ></td></tr>
+	<tr><td>
+	<h2><font size="10" color="yellow">"</font><font color="blue">UT’S SPANISH EDUCATION PROGRAM <br>WAS PERFECT FOR ME. TO BE ABLE<br> TO DOUBLE MAJOR IN SPANISH <br>EDUCATION AND SPANISH AND STILL<br> COMPLETE MY DEGREE IN FOUR YEARS<br> MAKES ME VERY MARKETABLE.</font><font size="10" color="yellow">"</font></h2>
+	</td></tr>
+	
+	</table>
+	</div>
+	<div style="background-image:url('images/newcamp.jpg');clear:both; width:100%; height:250px" class="newca">
+		<h1><font color="purple" family="Arial Black" size="5">EXPLORE</font> <font color="yellow" size="5">UT</font></h1>
+<p><font color="blue" size="5">No matter where you are on your educational path,<br> The University of Toledo can help you create your
+<br> future with more than 250 academic programs,<br> convenient scheduling options, academic support, <br>and a welcoming campus community.<br></font></p>
+<button style="background-color:blue"><font color="white">VIRTUAL TOUR</font></button>
+<button style="background-color:blue"><font color="white">COLLEGE & PROGRAMS</font></button>
+	</div>
+	
+</div>
+		
+<div style="background-color:white;clear:both; width:100%; height:150px" >
+<article>
+	<section>
+     <div class="thresa">
+      <p>
+       <img src="images/astronomy.jpg" align="left" width="600px" height="300px">.<br>
+       <h2>UT AMONG TOP ASTRONOMY PROGRAMS</h2><br>
+       <font size="3">In recognition of the astronomy and astrophysics program’s strengths in <br>research, education and outreach, UT was admitted as the 41st member of the<br> Association of Universities for Research in Astronomy, which goes by the acronym
+       <br> AURA. Read more.</font>
+      </p>
+     </div><br>
+     <div class="thres1b">
+     <h2 align="left">NEWS</h2>
+     <a href="#"><p>Legal philosopher to give Stranahan Lecture Sept. 20<br></p></a><hr>
+      <a href="#"><p>New interim leaders announced in medical operations at UTMC<br></p></a><hr>
+      <a href="#"><p>UT doctoral student honored for identifying how climate change threatens food quality<br></p></a><hr>
+      <a href="#"><p>Toledo to host Inverness Intercollegiate Sept. 19-20<br></p></a><hr>
+      <button style="background-color:blue"><font color="white">READ ALL UT NEWS</font></button>
+      </div><br>
+     <div class="lastc">
+
+      <p>
+      <h2 align="left">VIDEOS</h2>
+      <video width="250" height="180" controls>
+		<source type="video/mp4" src="images/vids" ></source>
+		</video><br>
+		<h5>OUR STORY</h5><br><hr>
+      </p>
+      
+     <a href="#"> <p>UT Celebrates Enrollment Increases<br></p></a><hr>
+     <a href="#"> <p>The Next Generation of Medicine<br></p></a><hr>
+     <button style="background-color:blue"><font color="white">SEE MORE UT VIDEOS</font></button>
+   </div>
+ </section>
+
+  </article>
+  </div>
+  <div style="background-color:#4c4c4c;clear:both; width:100%; height:40px" class="last">
+  	<p>Last updated 9/14/16</p>
+  </div>
+  <div style="background-image:url('back.jpg');clear:both; width:100%; height:150px" >
+<article>
+	<section>
+     <div class="thres">
+      <p>
+       <img src="images/head_logo.png" align="right"> .
+
+      </p>
+     </div>
+     <div class="thres1">
+     <font color="white"><p>The University of Toledo • 2801 W. Bancroft • Toledo, OH 43606-3390<br>
+		© The University of Toledo. • All rights reserved. • 1.800.586.5336</p></font><br>
+      <P > <font color="yellow">Terms of use</font> &nbsp<font color="yellow">Accessibility </font>&nbsp <font color="yellow">Feedback</font> &nbsp <font color="yellow">Contact us</font> &nbsp <font color="yellow">OhioMeansJob</font></P>
+     </div>
+     <div class="last">
+      <p>
+       <a href="#http://www.twitter.com/"><img src="images/fb.jpg" width="40px" height="40px"></a>
+       <a href="#http://www.twitter.com/"><img src="images/twit.jpg" width="40px" height="40px"></a>
+       <a href="#http://www.twitter.com/"><img src="images/you.jpg" width="40px" height="40px"></a>
+       <a href="#http://www.twitter.com/"><img src="images/insta.jpg" width="40px" height="40px"></a>
+       <a href="#http://www.twitter.com/"><img src="images/plusg.jpg" width="40px" height="40px"></a>
+      </p>
+   </div>
+ </section>
+  </article>
+</div>
+</div>
+</body>
+</html>
